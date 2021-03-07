@@ -1,0 +1,19 @@
+CC=gcc
+FLAGCS=-Wall -g
+SRC=es1.c
+
+
+target:
+	$(CC) $(FLAGCS) -o es2.out $(SRC)
+
+install:
+	mkdir ../bin
+	cp es2.out ../bin
+
+clean:
+	rm es2.out
+
+distclean: clean
+	rm -rf ../bin
+
+	
